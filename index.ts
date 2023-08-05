@@ -25,7 +25,7 @@ app.use(express.urlencoded({ extended: false }));
 
 // handle requests
 app.get("/", (_req, res) => {
-  res.sendFile("/views/index.html", { root: path.join(__dirname, "..") });
+  res.sendFile("index.html", { root: path.join(__dirname, "../public") });
 });
 
 app
